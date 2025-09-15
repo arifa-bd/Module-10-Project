@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .email-header {
+      background: linear-gradient(135deg, #0d6efd, #4dabf7);
+      color: #ffffff;
+      text-align: center;
+      padding: 25px;
+    }
+    .email-header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    /* Body */
+    .email-body {
+      padding: 30px;
+      color: #333333;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .email-body h2 {
+      color: #0d6efd;
+      font-size: 22px;
+      margin-top: 0;
+    }
+    .email-body p {
+      margin: 15px 0;
+    }
+    .email-body a.button {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 20px 0;
+      background-color: #0d6efd;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .email-body a.button:hover {
+      background-color: #0b5ed7;
+    }
+
+    /* Footer */
+    .email-footer {
+      background-color: #f8f9fa;
+      color: #0d6efd;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+    .email-footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .email-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    /* 1. Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .email-container {
+        margin: 15px;
+        border-radius: 6px;
+      }
+      .email-header h1 {
+        font-size: 22px;
+      }
+      .email-body {
+        padding: 20px;
+        font-size: 15px;
+      }
+      .email-body h2 {
+        font-size: 18px;
+      }
+      .email-body a.button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+      }
+    }
+
+    /* 2. Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .email-body {
+        font-size: 16px;
+      }
+      .email-body h2 {
+        font-size: 20px;
+      }
+    }
+
+    /* 3. Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .email-header h1 {
+        font-size: 30px;
+      }
+      .email-body {
+        font-size: 17px;
+        padding: 35px;
+      }
+    }
+
+    /* 4. Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .email-container {
+        max-width: 700px;
+      }
+      .email-body {
+        font-size: 18px;
+      }
+    }
+
+    /* 5. Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .email-container {
+        max-width: 800px;
+      }
+      .email-header h1 {
+        font-size: 34px;
+      }
+      .email-body {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Container -->
+  <div class="email-container">
+    <!-- Header -->
+    <div class="email-header">
+      <h1>Company Name</h1>
+    </div>
+
+    <!-- Body -->
+    <div class="email-body">
+      <h2>Hello John Doe</h2>
+      <p>We are excited to announce our latest updates. Check out the new features we have added just for you!</p>
+      <p>Click the button below to learn more and get started:</p>
+      <a href="#" class="button">Explore Now</a>
+      <p>Thank you for being a valued customer.</p>
+      <p>Your Regards,<br>Team Company</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="email-footer">
+      <p>Company Name, 123 Street, City, Country</p>
+      <p>
+        <a href="#">Unsubscribe</a> | <a href="#">Contact Us</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
